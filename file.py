@@ -14,8 +14,8 @@ def testing():
 
 def test_my_account(testing):
     pytest_driver = testing
-    pytest_driver.find_element(By.ID, 'email').send_keys('katipirx@gmail.com')
-    pytest_driver.find_element(By.ID, 'pass').send_keys('290888Katya')
+    pytest_driver.find_element(By.ID, 'email').send_keys('mail@mail.ru')
+    pytest_driver.find_element(By.ID, 'pass').send_keys('12345qwerty')
     pytest_driver.find_element(By.CSS_SELECTOR, "button[type=\"submit\"]").click()
     assert pytest_driver.find_element(By.TAG_NAME, 'h1').text == "PetFriends"
 
@@ -37,8 +37,8 @@ def test_my_account(testing):
 def test_show_all_pets(testing):
     # Finding cards of all pets
     pytest_driver = testing
-    pytest_driver.find_element(By.ID, 'email').send_keys('katipirx@gmail.com')
-    pytest_driver.find_element(By.ID, 'pass').send_keys('290888Katya')
+   pytest_driver.find_element(By.ID, 'email').send_keys('mail@mail.ru')
+    pytest_driver.find_element(By.ID, 'pass').send_keys('12345qwerty')
     pytest_driver.find_element(By.CSS_SELECTOR, "button[type=\"submit\"]").click()
     assert pytest_driver.find_element(By.TAG_NAME, 'h1').text == "PetFriends"
 
@@ -50,8 +50,8 @@ def test_show_all_pets(testing):
 
 def test_count_pet_cards(testing):
     pytest_driver = testing
-    pytest_driver.find_element(By.ID, 'email').send_keys('katipirx@gmail.com')
-    pytest_driver.find_element(By.ID, 'pass').send_keys('290888Katya')
+    pytest_driver.find_element(By.ID, 'email').send_keys('mail@mail.ru')
+    pytest_driver.find_element(By.ID, 'pass').send_keys('12345qwerty')
     pytest_driver.find_element(By.CSS_SELECTOR, "button[type=\"submit\"]").click()
     cards = pytest_driver.find_elements(By.CLASS_NAME, 'card-title')
 
